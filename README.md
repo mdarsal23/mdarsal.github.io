@@ -1,18 +1,19 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
+<!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
 
 # Welcome to my GitHub page!
+<!-- <span style="background-color: teal;">HI</span> -->
 
 ## Introduction
-Hello, I am Md Arsal Asif, a passionate developer with expertise in web development and software engineering.
+Hello, I am Md Arsal Asif, a sophomore at IIT Kanpur.
 
-I just wanted to make a github page
-Since I don't really know what to do next here are some good cinema recommendations from my side :)
+I just wanted to make a github page.
+Since I don't really decided what to do next here are some good cinema recommendations from my side :)
 
 ## **Movies**
 ### Romcom : NOT IN ORDER (except the first three)
-1. La La Land
+1. <span style="background-color: yellow;"> La La Land 
 2. Eternal Sunshine of Spotless Mind
-3. 10 things I hate about you
+3. 10 things I hate about you </span>
 3. The Notebook
 4. Notting Hill 
 5. Serendipity
