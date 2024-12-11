@@ -7,7 +7,7 @@
 Hello, I am Md Arsal Asif, a sophomore at IIT Kanpur.
 
 I just wanted to make a github page.
-Since I didn't really decide what to do next here are some good cinema recommendations from my side :)
+Since I didn't really decide what to do next here are some good cinema recommendations from my side :) (these are the films that I've watched over the years and liked it)
 
 ## **Movies**
 ### Romcom : NOT IN ORDER (except the first three)
@@ -39,7 +39,49 @@ Don't take me for a hopeless romantic (that doesn't mean I'm not, just don't tak
 11. [Parasite](https://www.imdb.com/title/tt6751668/) (Director knew how to keep audience engaged)
 12. [Whiplash](https://www.imdb.com/title/tt2582802/) (The desperation you need to be great at something)
 13. [Kapoor and Sons](https://www.imdb.com/title/tt4900716/) (Everything about this movie is good)
+14. Mulholland Drive (mindfuck)
+### Crime Thrillers(probably my fav)
+1. The Batman
+1. Se7en
+2. The Invisible Guest
+3. The Departed
+4. Heat
+5. Girl with the Dragon Tattoo
+6. Zodiac
+7. John Wick (all four)
+8. Catch me if you can
+9. The Invisble Man
+10. Mission Impossible (all parts)
+11. The Courier
+12. 
+### Movies which messed with flow of time
+1. Edge of Tomorrow
+2. The Tomorrow War
+3. Happy Death Day
+4. Looper
+5. Source Code
+6. Harry Potter and the Prisoner of Azkaban
+7. Avenger's Endgame
+8. Predestination
+9. Arrival (don't worry you wont remember this detail while watching it)
+10. Xmen: Days of Future Past
+11. Doctor Strange
+12. Midnight in Paris (never thought I'd see a time travel romantic film and love it)
 
+###Horror☠️
+1. Satan's Slave 2 Communion (I'm never touching another indonesian horror ever again)
+2. The Exorcist
+3. Conjuring
+4. Annabelle
+5. Curse of LaLorona
+6. Insidious
+7. Evil Dead
+8. Relic
+9. Incantation
+10. Prometheus (this is one disgusting film)
+11. Quiet Place
+12. Don't breathe (both parts)
+13. Unfriended: Dark web
 ###Trash (acc to me) (mixed genre)
 1. Uncut gems
 2. Before Sunrise
@@ -56,3 +98,4 @@ Don't take me for a hopeless romantic (that doesn't mean I'm not, just don't tak
 1. Titans
 1. Flash Movie
 1. The Proposal
+1. FastX
