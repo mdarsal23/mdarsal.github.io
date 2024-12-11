@@ -53,7 +53,7 @@ Don't take me for a hopeless romantic (that doesn't mean I'm not, just don't tak
 9. The Invisble Man
 10. Mission Impossible (all parts)
 11. The Courier
-12. 
+    
 ### Movies which messed with flow of time
 1. Edge of Tomorrow
 2. The Tomorrow War
@@ -68,7 +68,8 @@ Don't take me for a hopeless romantic (that doesn't mean I'm not, just don't tak
 11. Doctor Strange
 12. Midnight in Paris (never thought I'd see a time travel romantic film and love it)
 
-###Horror☠️
+### Horror ☠
+
 1. Satan's Slave 2 Communion (I'm never touching another indonesian horror ever again)
 2. The Exorcist
 3. Conjuring
@@ -82,6 +83,8 @@ Don't take me for a hopeless romantic (that doesn't mean I'm not, just don't tak
 11. Quiet Place
 12. Don't breathe (both parts)
 13. Unfriended: Dark web
+
+
 ###Trash (acc to me) (mixed genre)
 1. Uncut gems
 2. Before Sunrise
