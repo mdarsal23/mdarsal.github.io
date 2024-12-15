@@ -49,14 +49,14 @@ Do I love Drama? Yes, Sir!
 2. [Se7en](https://www.imdb.com/title/tt0114369/) (I love it when a movie forces me to read about it)
 3. [The Invisible Guest](https://www.imdb.com/title/tt4857264/) (Great story)
 5. [Heat](https://www.imdb.com/title/tt0113277/) (Al Pacino and Robert de Niro should be enough)
-4. Gone Girl
+4. Gone Girl 
 6. [Girl with the Dragon Tattoo](https://www.imdb.com/title/tt1568346/) (Again great story)
-7. [Zodiac](https://www.imdb.com/title/tt0443706/)
-8. [John Wick (all four)](https://www.imdb.com/title/tt2911666/)
-9. [Catch me if you can](https://www.imdb.com/title/tt0264464/)
-10. [The Invisible Man](https://www.imdb.com/title/tt1051906/)
-11. [Mission Impossible (all parts)](https://www.imdb.com/title/tt0117060/)
-12. [The Courier](https://www.imdb.com/title/tt8368512/)
+7. [Zodiac](https://www.imdb.com/title/tt0443706/) (Yes I'm a David Fincher fan)
+8. [John Wick (all four)](https://www.imdb.com/title/tt2911666/) (Something as trivial as a pencil is lethal weapon if this guy is in question)
+9. [Catch me if you can](https://www.imdb.com/title/tt0264464/) 
+10. [The Invisible Man](https://www.imdb.com/title/tt1051906/) (its terrifying)
+11. [Mission Impossible (all parts)](https://www.imdb.com/title/tt0117060/) (its a 2hr long syringe of adrenaline)
+12. [The Courier](https://www.imdb.com/title/tt8368512/) (Benedict Cumberbatch)
 
 ### Animated
 1. [Spiderman: Across the Spiderverse](https://www.imdb.com/title/tt9362722/)
