@@ -110,3 +110,307 @@ Do I love Drama? Yes, Sir!
 14. [Flash Movie](https://www.imdb.com/title/tt0439572/)
 15. [The Proposal](https://www.imdb.com/title/tt1041829/)
 16. [FastX](https://www.imdb.com/title/tt5433140/)
+
+Enough with the movies, here are some of my Advent of Code submissions of this year 2024
+
+<details>
+    <summary> Day 1 </summary>
+
+```cpp
+void solve() {
+    string s;
+    cin >> s;
+    int a = (s[0] - '0') * 10 + (s[1] - '0');
+    if (a == 10) {
+        if (s[2] == '0') {
+            cout << "NO";
+            return;
+        }
+        a = 0;
+        for (int i = 2; i < s.size(); ++i) {
+            a = a * 10 + (s[i] - '0');
+        }
+        cout << "YES";
+    }
+}
+```  
+</details>
+<details>
+<summary> Day 2 </summary>
+
+```cpp
+void solve()
+{
+    //part2
+    vvi a;
+    string line;
+    while (getline(cin, line)) {
+        if (line.empty()) break; // Stop reading on empty line
+        vi row;
+        stringstream ss(line);
+        int num;
+        while (ss >> num) {
+            row.pb(num);
+        }
+        a.pb(row);
+    }
+    int count = 0;
+    f(i,a.size()){
+        
+        fi(k,0,a[i].size()){
+            bool unsafe = false;
+            vi v;
+            
+            f(j,a[i].size()){
+                if(j == k) continue;
+                v.pb(a[i][j]);
+            }
+            // print(v);
+            bool ascd = false, desc = false;
+            int d = abs(v[0] - v[1]);
+            if(d<1 || d>3) unsafe = true;
+            if(v[0] < v[1]) ascd = true;
+            else desc = true;
+            // cout<< d <<" "<<ascd<<" "<<desc << nl;
+            if(!unsafe){
+            fi(j,1,v.size()-1){
+                d = abs(v[j] - v[j+1]);
+                // cout << d << " ";
+                if(d<1 || d>3) unsafe = true;
+                else if(v[j] < v[j+1] && desc) unsafe = true;
+                else if(v[j] > v[j+1] && ascd) unsafe = true;
+                // if(unsafe) break;
+            }
+            }
+            // cout << unsafe << nl;
+            if(!unsafe){count++;break;}
+        }
+        // if(!unsafe)count++;
+    }
+    cout << count<< nl;
+    // ...existing code...
+}
+```
+</details>
+<details>
+<summary> Day 3 </summary>
+
+```cpp
+void solve()
+{
+    // part1
+    // string str[6];
+    string s;
+    cin >> s;
+    // f(i,6){
+    //     cin >> s;
+    //     str[i] = s;
+    // }
+    long long ans = 0,f=0;
+    // vl ok;
+    // f(j,6){
+    f(i,s.size()){
+        if(s[i] == 'm'){
+            string a = s.substr(i, 4);
+            if(a == "mul("){
+                int j = i + 4;
+                string num1, num2;
+                while(j < s.size() && isdigit(s[j])) {
+                    num1 += s[j++];
+                }
+                if(j < s.size() && s[j] == ',') {
+                    j++;
+                    while(j < s.size() && isdigit(s[j])) {
+                        num2 += s[j++];
+                    }
+                    if(j < s.size() && s[j] == ')') {
+                        int n1 = stoi(num1);
+                        int n2 = stoi(num2);
+                        ans+= (n1 * n2);
+                    }
+                }
+            }
+        }
+    // }
+    // cout << ans << nl;
+    f+=ans; 
+    }
+    cout << ans;
+}
+```
+</details>
+<details>
+<summary> Day 4 </summary>
+
+```cpp
+void solve()
+{
+    string s, ans = "XMAS";
+    int ctr = 0;
+    vector<string> input;
+    while (1) {
+        cin >> s;
+        if (s == "$") break;
+        input.push_back(s);
+    }
+    // **Part 2**
+    //M_S | M_M | S_M | S_S 
+    //_A_ | _A_ | _A_ | _A_
+    //M_S | S_S | S_M | M_M 
+    int rows = input.size();
+    int cols = input[0].size();
+    fi(i, 1, rows - 1) {
+        fi(j, 1, cols - 1) {
+            if (input[i][j] == 'A') {
+                string a = "", b = "", c = "", d = "";
+                a += string(1, input[i + 1][j + 1]) + string(1, input[i + 1][j - 1]);
+                b += string(1, input[i - 1][j + 1]) + string(1, input[i - 1][j - 1]);
+                c += string(1, input[i + 1][j + 1]) + string(1, input[i - 1][j + 1]);
+                d += string(1, input[i + 1][j - 1]) + string(1, input[i - 1][j - 1]);
+                if (a == "MM" && b == "SS") ctr++;
+                if (b == "MM" && a == "SS") ctr++;
+                if (c == "MM" && d == "SS") ctr++;
+                if (d == "MM" && c == "SS") ctr++;
+                cout << a << " " << b << " " << c << " " << d << nl;
+            }
+        }
+    }
+    cout << ctr << nl;
+    // **Part 1**
+    f(i, input.size()) {
+        f(j, input[i].size()) {
+            if (input[i][j] == 'X') {
+                string a, b, c, d, e, f, g, h;
+                if (i < input.size() - 3) {
+                    f(k, 4) a += input[i + k][j];
+                }
+                if (j < input[i].size() - 3) {
+                    f(k, 4) b += input[i][j + k];
+                }
+                if (i < input.size() - 3 && j < input[i].size() - 3) {
+                    f(k, 4) c += input[i + k][j + k];
+                }
+                if (i >= 3) {
+                    f(k, 4) d += input[i - k][j];
+                }
+                if (i >= 3 && j < input[i].size() - 3) {
+                    f(k, 4) g += input[i - k][j + k];
+                }
+                if (j >= 3) {
+                    f(k, 4) e += input[i][j - k];
+                }
+                if (j >= 3 && i < input.size() - 3) {
+                    f(k, 4) h += input[i + k][j - k];
+                }
+                if (i >= 3 && j >= 3) {
+                    f(k, 4) f += input[i - k][j - k];
+                }
+                if (a == ans) ctr++;
+                if (b == ans) ctr++;
+                if (c == ans) ctr++;
+                if (d == ans) ctr++;
+                if (e == ans) ctr++;
+                if (f == ans) ctr++;
+                if (g == ans) ctr++;
+                if (h == ans) ctr++;
+            }
+        }
+    }
+    cout << ctr << nl;
+}
+
+```
+</details>
+<details>
+<summary> Day 5 </summary>
+
+```cpp
+void solve()
+{
+    //Part 1 && part 2
+    int n, m, incorrect = 0, sum=0;
+    vi a;
+    cout << "entering loop" << nl;
+    unordered_map <int,vi> mp;
+    string line;
+    while (getline(cin, line)) {
+        if (line.empty()) break;
+        size_t pos = line.find('|');
+        if (pos != string::npos) {
+            try {
+                int m = stoi(line.substr(0, pos));
+                int n = stoi(line.substr(pos + 1));
+                a.pb(n);
+                mp[n].pb(m);
+            } catch (const invalid_argument& e) {
+                cerr << "Invalid input: " << line << nl;
+            } catch (const out_of_range& e) {
+                cerr << "Out of range input: " << line << nl;
+            }
+        } else {
+            cerr << "Invalid format: " << line << nl;
+            break;
+        }
+    }
+    cout << nl;
+    // print_with_map(a,mp);
+    vvi ab;
+    // string line;
+    while (getline(cin, line)) {
+        if (line.empty()) break; // Stop reading on empty line
+        stringstream ss(line);
+        string number;
+        vi list;
+        while (getline(ss, number, ',')) {
+            try {
+                list.pb(stoi(number));
+            } catch (const invalid_argument& e) {
+                cerr << "Second loop " << number << nl;
+            } catch (const out_of_range& e) {
+                cerr << "Out of range input: " << number << nl;
+            }
+        }
+        // Print the list
+        ab.pb(list);
+    }
+    cout << "out of loop"<< nl;
+    // f(i,ab.size()){
+    //     f(j,ab[i].size()){
+    //         cout << ab[i][j] << " ";
+    //     }
+    //     cout << nl;
+    // }
+    t(it,a){
+        sort(all(mp[it]));
+    }
+    bool mark = false;
+    // print_with_map(a,mp);
+    f(i,ab.size()){
+        mark = false;
+        f(j,ab[i].size()){
+            incorrect = 0;
+            fi(k,j+1,ab[i].size()){
+                if(binary_search(all(mp[ab[i][j]]),ab[i][k])){
+                    swap(ab[i][j],ab[i][k]);
+                    mark = true;
+                    // cout << "here"<<nl;
+                    incorrect=1;
+                    // j = ab[i].size();
+                    // break;
+                }
+            }
+        }
+        // cout << incorrect << nl;
+        if(mark) {
+            sum+= ab[i][ab[i].size()/2];
+            // cout << ab[i][ab[i].size()/2] << nl;
+        }
+        if(incorrect==0){
+            // sum+= ab[i][ab[i].size()/2];  // part1
+            // cout << ab[i][ab[i].size()/2] << nl;
+        }
+    }
+    cout << sum << nl;
+
+}
+```
